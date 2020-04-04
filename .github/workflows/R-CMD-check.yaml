@@ -86,5 +86,5 @@ jobs:
           R CMD INSTALL .
           Rscript -e "install.packages(c('remotes', 'BiocManager'), Ncpu = 2L)"
           Rscript -e "install.packages('Rcpp', repos='https://rcppcore.github.io/drat', Ncpu = 2L)"
-          Rscript -e "remotes::install_cran('pkgdown'); pkgdown::deploy_to_branch(new_process = FALSE)"
+          Rscript -e "remotes::install_dev('pkgdown'); pkgdown::deploy_to_branch(new_process = FALSE)"
 
